@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS card</title>
     <style>
-        div{
-            border: 2px solid black;
-            height: 550px;
-            width: 400px;
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+        body {
+            background-color: gray;
+            padding: 95px;
+            display: flex;
+        }
+
+        .card {
+            background-color: white;
+            width: 324px;
+            /* height: 444px; */
+            border-radius: 8px;
+            padding: 0 0 34px 0;
+            margin: 4px;
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image img {
+            border-radius: 8px;
+        }
+
+        .content {
+            padding:  5px 13px;
+            font-family: "Baloo Bhaijaan 2", sans-serif;
+        }
+
+
+        .content p {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .capsules {
+            padding: 0px 28px 0px 14px;
+        }
+
+        .capsules span {
+            border: 2px solid gray;
+            padding: 0px 6px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-family: "Baloo Bhaijaan 2", sans-serif;
+        }
+        .button{
             text-align: center;
-            position: relative;
-            left: 500px;
-            top:20px
-            
         }
-        div>img{
-            padding: 20px;
-            border: 20px;
-            border-radius: 45px;
-            display: block;
-            text-align: center;
-            margin: auto;
+
+        .button button{
+            font-family: "Baloo Bhaijaan 2", sans-serif;
+            padding: 3px 9px;
+            border-radius: 11px;
+            background-color: rgb(188, 229, 246);
+            color: rgb(8, 118, 155);
+            border: none;
+            margin-top: 5px;
+            font-weight: bold;
+            cursor: pointer;
         }
-        .btn1{
-            border-radius: 20px;
-           margin-top: 20px;
-           margin-left: -200px;
-           /* margin-right: 150px; */
-        }
-        .btn2{
-            border-radius: 20px;
-            margin-top: 20px;
-           /* margin-left: 30px; */
-           /* margin-right: 10px; */
-        }
-        .harry{
-            text-align: justify;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .rm{
-            border-radius: 50px;
-            background-color:lightblue;
-            margin-top: 40px;
-        }
+        .button button:hover{
+            background-color: rgb(207, 211, 214);
     </style>
 </head>
+
 <body>
-    <div class="image">
-        <img height="230px" width="300" src="image.jpg" alt="My image"/>
-            <span>
-                
-                <button class="btn1">Nature</button>
-                <button class="btn2">Lake</button>
-            </span>
-            <h2>Lago Di Braies</h2>
-            <p class="harry">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sapiente natus aperiam odio vero modi, necessitatibus dolores. Esse, dignissimos nesciunt?</p>
-            <button class="rm">Read More</button>
+    <div class="card">
+        <div class="image">
+            <img width="314px" src="https://media.istockphoto.com/id/1391462403/photo/kicking-horse-river-carves-through-natural-bridge-at-yoho-national-park-british-columbia.jpg?s=612x612&w=0&k=20&c=k14KHmxveO9wsvG8bv3QBEJsX7pZIRZPUQhhBowE6D4=" alt="image" />
         </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Hot Air Balloon</span>
+        </div>
+
+        <div class="content">
+            <h2>Harshini</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde voluptate molestiae ab modi quis
+                cumque, eligendi aliquam quam alias? Temporibus, minus aperiam.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="314px" src="image.jpg" alt="image" />
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Hot Air Balloon</span>
+        </div>
+
+        <div class="content">
+            <h2>Harshini</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde voluptate molestiae ab modi quis
+                cumque, eligendi aliquam quam alias? Temporibus, minus aperiam.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
 </body>
 </html>
